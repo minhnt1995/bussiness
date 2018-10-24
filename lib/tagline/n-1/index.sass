@@ -1,0 +1,44 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-n-1
+	display: flex
+	text-align: center
+	padding-bottom: 10rem
+	.title
+		h1
+			font-size: 2rem
+			margin-top: 8rem
+			font-weight: 800
+		h2
+			font-size: 1.5rem
+		p
+			font-size: 1rem
+		+media-breakpoint-up(xs)
+			+fz(1.5rem)
+		.btn.btn-primary
+			background: color-get($mau,cam-1)
+			border-color: #2e319200
+			color: #ffffff
+			margin-top: 6rem
+		.col-md-3
+			h2
+				font-size: 1.5rem
+				background-color: rgba(255, 255, 255, 0.03)
+				border-bottom: 1px solid rgba(255, 255, 255, 0.125)
+			+media-breakpoint-up(xs)
+				top: 5rem
+				h1
+					font-size: 2.5rem
+					font-weight: 600
+				p
+					font-size: 0.8rem
+			+media-breakpoint-up(sm)
+				top: 3rem
+				h1
+					font-size: 1.5rem
+					font-weight: 600
+				p
+					font-size: 0.8rem

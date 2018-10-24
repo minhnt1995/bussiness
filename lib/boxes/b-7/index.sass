@@ -5,10 +5,39 @@
 
 .canhcam-boxes-7
 	+pad(2rem 0)
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	background: #ffc155
+	h2
+		font-size: 1.5rem
+		font-weight: 600
+	h3
+		font-size: 1rem
+		font-weight: 600
+		padding-top: 1rem
+	.item
+		background: #ffffff
+		.col-md-4
+			padding-top: 3rem 
+			img
+				width: 7rem
+				border-radius: 50%
+	+media-breakpoint-up(md)
+		+pad(4rem 0)
+		.col-md-6
+			margin-top: 2rem
+			.col-md-4
+				padding-top: 1rem
+				padding-left: 2rem
+				img
+					width: 7rem
+					border-radius: 50%
+			.col-md-8
+				text-align: left
+				padding-top: 3rem
+				padding-left: 1rem
+				bottom: 2rem
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
-	.boxes-details
-		.item 
-			margin-top: 2rem
-		img
-			max-width: 60px

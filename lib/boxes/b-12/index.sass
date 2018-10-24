@@ -4,18 +4,21 @@
 //////////////////////////////////////
 
 .canhcam-boxes-12
+	.no-gutters
+		background: #fdbf5e
+		color: color-get($mau,trang)
 	.gallery-lists
-		.info 
+		.info
 			padding-bottom: 2rem 
-			h3 
-				color: lighten(color-get($mau,main),0%)
+			h3
 				+fw(600)
 				+fz(2rem)
+				+media-breakpoint-up(xs)
+					font-size: 1.5rem
 			.lead 
 				color: darken(color-get($mau,trang),40%)
-			p 
-				a 
-					color: lighten(color-get($mau,main),0%)
+			p.mb-0
+				color: color-get($mau,trang)
 			+media-breakpoint-up(lg)
 				padding-left: 2px
 				padding-bottom: 0
@@ -25,55 +28,18 @@
 				justify-content: center
 				.container
 					max-width: 500px 
-
+	.order-lg-1
 		.item
 			display: flex
 			text-decoration: none
 			height: 100%
 			// +bor-rad(5px)
 			overflow: hidden
-			figure
-				overflow: hidden
-				// +bor-rad(5px)
-				margin-bottom: 0
-				.boxzoom
-					overflow: hidden
-					position: relative
-					// +bor-rad(5px)
-					&:after
-						content: ''
-						display: block
-						z-index: -1
-						background: rgba(0,0,0,.5)
-						width: 100%
-						height: 100%
-						+pos(abs, 0 0 null null)
-					// +media-breakpoint-up(sm)
-					// 	max-height: 200px
-					// 	min-height: 200px
-					.zoom-item
-						color: color-get($mau,trang)
-						+pos(abs, 50% null null 50%)
-						+transform(translateX(-50%) translateY(-50%))
-						z-index: 10
-						+fz(7rem)
-						+transition(all .2s ease-in-out)
-						.mdi-play-circle-outline
-							display: block
-						.mdi-play-circle
-							display: none
-					img
-						// +bor-rad(5px 5px 0 0)
-						// +transition(all .5s ease-in-out)
-						width: 100%
-				figcaption
-					padding: 1rem 0 0 0
-
-					h3
-						+fz(1.1rem)
-						+fw(400)
-						color: color-get($mau,den)
-						margin-bottom: 0
+			img
+				// +bor-rad(5px 5px 0 0)
+				// +transition(all .5s ease-in-out)
+				width: 100%
+				height: 100%
 			&:hover
 				figure
 					.boxzoom

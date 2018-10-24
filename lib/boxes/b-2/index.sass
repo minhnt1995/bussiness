@@ -4,17 +4,75 @@
 //////////////////////////////////////
 
 .canhcam-boxes-2
+	background: #71a0d2
 	+pad(2rem 0)
 	text-align: center
 	background-attachment: fixed
+	position: relative
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+		padding-bottom: 20rem
 	h2
 		color: color-get($mau,trang)
 		+fz(1.8rem)
+		+media-breakpoint-up(xs)
+			+fz(1.5rem)
+			font-weight: 700
+		+media-breakpoint-up(sm)
+			+fz(1.5rem)
+		+media-breakpoint-up(md)
+			+fz(2rem)
 		+media-breakpoint-up(lg)
 			+fz(2.5rem)
+	.form-group
+		.col-md-3
+			margin-bottom: 2rem
 	.btn-primary
 		+pad(1rem 3rem)
-		+bor-rad(3rem)
 		+fz(1.5rem)
+		font-weight: 700
+		+media-breakpoint-up(xs)
+			+fz(1.2rem)
+		+media-breakpoint-up(sm)
+			+fz(1.5rem)
+			font-weight: 500
+		+media-breakpoint-up(sm)
+			+fz(1.5rem)
+			+pad(0rem 2rem)
+			font-weight: 500
+		+media-breakpoint-up(lg)
+			+fz(1.5rem)
+			font-weight: 500
+	.owl-carousel
+		position: absolute
+		left: 0
+		.owl-item
+			.item
+				display: flex;
+				justify-content: center
+			.box
+				height: 400px
+				background-size: contain!important
+				background-repeat: no-repeat
+				width: 35%
+				+media-breakpoint-up(xs)
+					height: 150px
+					width: 75%
+					padding-bottom: 18rem
+				+media-breakpoint-up(sm)
+					height: 150px
+					width: 80%
+					padding-bottom: 27rem
+				+media-breakpoint-up(md)
+					height: 150px
+					width: 65%
+					padding-bottom: 28rem
+				+media-breakpoint-up(lg)
+					height: 150px
+					width: 75%
+					padding-bottom: 25rem
+	.owl-theme
+		.owl-dots
+			.owl-dot
+				span
+					margin: -85px 7px

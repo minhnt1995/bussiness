@@ -4,4 +4,51 @@
 //////////////////////////////////////
 
 .canhcam-tagline-7
-	
+	position: relative
+	z-index: 200
+	+pad(2rem)
+	+media-breakpoint-up(md)
+		+pad(4rem)
+	.container
+		.list-group
+			.list-group-item
+				background-color: transparent
+				border: none
+				text-align: center
+				justify-content: center
+				align-items: center
+				display: flex
+				button
+					border-radius: 0
+					width: 60%
+				h4
+					color: color-get($mau, main)
+					text-transform: uppercase
+					+fz(1.8rem)
+					+fw(400)
+				&.price
+					+fz(1.8rem)
+					+fw(600)
+				a
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						display: block
+						width: 100%
+						height: 1px
+						background: red
+				&.str
+					position: relative
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						width: 90%
+						height: 1px
+						top: 2%
+						background: color-get($mau,xam-1)
+
+
+		.box-center
+			background: color-get($mau,xam-1)
